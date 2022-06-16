@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include ('../partials/heade'); %>
+<body>
+    <%- include ('../partials/header') %>
+    <main>
+        <h1>Arquivos NODE-EJS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed earum recusandae ullam, porro officia nisi asperiores animi dolorum et sunt voluptatem sapiente vitae totam similique nemo eligendi eveniet laborum repudiandae!</p>
+        <p><%= subtitle %></p>
+        <div>
+            <ul>
+                <% qualidades.forEach(function(qualidade){ %>
+                    <li>
+                        <strong><%= qualidade.title %></strong><%= qualidade.message %>
+                    </li>
+                <% }) %>
+    </main>  
+    <%- include ('../partials/footer'); %>  
+</body>
+</html>

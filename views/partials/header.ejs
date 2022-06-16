@@ -1,0 +1,33 @@
+<style>
+        body{
+            margin: auto;
+            max-width: 800px;
+            background-color: purple;
+        }
+        a{
+            text-decoration: none;
+            text-align: left;
+            color: darkcyan;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+<header>
+    <a href="@">EJS</a>
+    <ul>
+            <li>
+                    <a href="/">Home</a>
+            </li>
+            <li>
+                    <a href="/sobre">About</a>
+            </li>
+    </ul>
+    <p>Página: <%= typeof pagina != 'undefined' ? pagina: 'Home' %> </p>
+</header>
